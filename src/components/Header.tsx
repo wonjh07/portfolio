@@ -1,14 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 function Header() {
   return (
     <>
       <Container>
-        <Logo>Jaeho Won Portfolio</Logo>
+        <Logo>Jaeho Won</Logo>
         <Buttons>
-          <T1>BUTTON</T1>
-          <T1>BUTTON</T1>
-          <T1>BUTTON</T1>
+          <T1>Profile</T1>
+          <T1>Projects</T1>
+          <T1>Resume</T1>
         </Buttons>
       </Container>
     </>
@@ -22,8 +22,6 @@ const Container = styled.div`
   height: 60px;
   background-color: #eaeaea;
   box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 0 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -40,9 +38,10 @@ const Buttons = styled.div`
 `;
 
 const Logo = styled.div`
-  font-size: 32px;
+  font-family: 'Samsung Gothic';
+  font-size: 28px;
   height: 100%;
-  width: 300px;
+  margin: 0 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -53,6 +52,7 @@ const Logo = styled.div`
 
 const T1 = styled.p`
   font-size: 16px;
+  font-family: 'Samsung Gothic';
   width: 100px;
   cursor: pointer;
   box-sizing: border-box;

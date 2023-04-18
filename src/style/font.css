@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Samsung Gothic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SG_Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Samsung Gothic';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../assets/fonts/SG_Bold.ttf') format('truetype');
+}

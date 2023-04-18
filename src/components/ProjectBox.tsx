@@ -1,46 +1,59 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 function ProjectBox() {
-  const boxClick = () => {
-    alert("프로젝트 준비중입니다.");
+  const boxClick = (a: string = 'hi') => {
+    alert(a);
   };
 
   return (
     <>
-      <GridBox>
-        <Box onClick={boxClick} bgColor="tomato">
-          <Title>Project</Title>
-        </Box>
-        <Box onClick={boxClick} bgColor="skyblue">
-          <Title>Project</Title>
-        </Box>
-        <Box onClick={boxClick} bgColor="violet">
-          <Title>Project</Title>
-        </Box>
-        <Box onClick={boxClick} bgColor="green">
-          <Title>Project</Title>
-        </Box>
-      </GridBox>
+      <Container>
+        <MenuTitle>프로젝트 포트폴리오</MenuTitle>
+        <GridBox>
+          <Box onClick={() => boxClick('111111')} bgColor="tomato">
+            <Title>Project</Title>
+          </Box>
+          <Box onClick={() => boxClick()} bgColor="skyblue">
+            <Title>Project</Title>
+          </Box>
+          <Box onClick={() => boxClick()} bgColor="violet">
+            <Title>Project</Title>
+          </Box>
+          <Box onClick={() => boxClick()} bgColor="green">
+            <Title>Project</Title>
+          </Box>
+        </GridBox>
+      </Container>
     </>
   );
 }
 
 export default ProjectBox;
 
+const Container = styled.div`
+  width: 800px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lemonchiffon;
+`;
+
 const GridBox = styled.div`
   display: grid;
-  width: 500px;
-  max-width: 1000px;
-  margin: 10px 10px;
+  width: 400px;
+  max-width: 800px;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
   box-sizing: border-box;
   gap: 10px;
   padding: 10px;
+  background-color: grey;
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
-    width: 1000px;
+    width: 800px;
   }
 `;
 
@@ -68,5 +81,16 @@ const Box = styled.div<{ bgColor: string }>`
 
 const Title = styled.p`
   text-align: center;
-  font-size: 40px;
+  font-family: 'Samsung Gothic';
+  font-size: 30px;
+`;
+
+const MenuTitle = styled.p`
+  width: 100%;
+  text-align: start;
+  background-color: aquamarine;
+  font-family: 'Samsung Gothic';
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
 `;
