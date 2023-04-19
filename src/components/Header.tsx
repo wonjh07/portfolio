@@ -9,6 +9,7 @@ function Header() {
           <T1>Profile</T1>
           <T1>Projects</T1>
           <T1>Resume</T1>
+          <T1>Demos</T1>
         </Buttons>
       </Container>
     </>
@@ -18,9 +19,8 @@ function Header() {
 export default Header;
 
 const Container = styled.div`
-  width: 100%;
+  width: 1000px;
   height: 60px;
-  background-color: #d7d5da;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -39,9 +39,8 @@ const Buttons = styled.div`
 
 const Logo = styled.div`
   font-family: 'Samsung Gothic';
-  font-size: 28px;
+  font-size: 1.6rem;
   height: 100%;
-  margin: 0 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -51,7 +50,7 @@ const Logo = styled.div`
 `;
 
 const T1 = styled.p`
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Samsung Gothic';
   width: 100px;
   cursor: pointer;

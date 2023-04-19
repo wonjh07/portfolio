@@ -1,10 +1,15 @@
 import styled from 'styled-components';
+import { LinearText } from '../style/style';
 
 function Banner() {
   return (
     <>
       <Container>
-        <Text>FRONTEND DEVELOPER</Text>
+        <Text>
+          <p>안녕하세요,</p>
+          <p>FRONTEND DEVELOPER</p>
+          <p>원재호 입니다.</p>
+        </Text>
       </Container>
     </>
   );
@@ -13,20 +18,33 @@ function Banner() {
 export default Banner;
 
 const Container = styled.div`
-  width: 1200px;
-  height: 200px;
+  width: 100%;
+  height: 500px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(to right top, #000000, #353335);
 `;
 
-const Text = styled.p`
-  font-family: 'Samsung Gothic';
-  font-size: 80px;
-  font-weight: bold;
-  background: linear-gradient(to right top, #330646, #9b23e6, #ff9e96);
-  color: transparent;
-  -webkit-background-clip: text;
+const Text = styled(LinearText)`
+  height: 100%;
+  gap: 20px;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 `;

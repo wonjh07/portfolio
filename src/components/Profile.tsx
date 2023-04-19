@@ -9,7 +9,14 @@ function Profile() {
         <s.MenuTitle>프로필</s.MenuTitle>
         <Flexbox>
           <Photo me={me} />
-          <Description>HI</Description>
+          <Description>
+            <p> 원재호 </p>
+            <p> 1992.07.19 </p>
+            <p> #세종대학교 </p>
+            <p> #기계공학과 #비전공자 </p>
+            <p> #3개국어 #🇰🇷🇺🇸🇯🇵 </p>
+            <p> #SSAFY7기 </p>
+          </Description>
         </Flexbox>
       </Container>
     </>
@@ -19,7 +26,7 @@ function Profile() {
 export default Profile;
 
 const Container = styled.div`
-  width: 1200px;
+  width: 1000px;
   margin-bottom: 60px;
 `;
 
@@ -35,13 +42,21 @@ const Photo = styled.div<{ me: string }>`
   aspect-ratio: 1;
   background-image: url(${(props) => props.me});
   background-size: 100%;
-  border-radius: 400px;
+  border-radius: 40px;
   box-sizing: border-box;
 `;
 
 const Description = styled.div`
   width: 50%;
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
-  background-color: #e3e3e3;
+  font-size: 2rem;
+  font-family: 'Samsung Gothic';
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  font-weight: bold;
+  gap: 20px;
+  color: #424242;
 `;

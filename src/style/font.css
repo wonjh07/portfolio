@@ -11,3 +11,10 @@
   font-weight: bold;
   src: url('../assets/fonts/SG_Bold.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Samsung Gothic';
+  font-style: normal;
+  font-weight: medium;
+  src: url('../assets/fonts/SG_Medium.ttf') format('truetype');
+}
