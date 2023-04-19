@@ -20,7 +20,7 @@ export default Header;
 const Container = styled.div`
   width: 100%;
   height: 60px;
-  background-color: #eaeaea;
+  background-color: #d7d5da;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;

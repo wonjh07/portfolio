@@ -3,7 +3,9 @@ import styled from 'styled-components';
 function Banner() {
   return (
     <>
-      <Container>BANNER</Container>
+      <Container>
+        <Text>FRONTEND DEVELOPER</Text>
+      </Container>
     </>
   );
 }
@@ -11,13 +13,20 @@ function Banner() {
 export default Banner;
 
 const Container = styled.div`
-  width: 800px;
+  width: 1200px;
   height: 200px;
-  background-color: #628796;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+`;
+
+const Text = styled.p`
+  font-family: 'Samsung Gothic';
+  font-size: 80px;
+  font-weight: bold;
+  background: linear-gradient(to right top, #330646, #9b23e6, #ff9e96);
+  color: transparent;
+  -webkit-background-clip: text;
 `;
