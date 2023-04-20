@@ -6,7 +6,7 @@ export const MenuTitle = styled.p`
   font-family: 'Samsung Gothic';
   font-size: 1.6rem;
   font-weight: bold;
-  margin: 60px 0;
+  margin-bottom: 40px;
   color: #8916d0;
 `;
 
@@ -20,8 +20,14 @@ export const LinearText = styled.p`
   font-family: 'Samsung Gothic';
   font-size: 4rem;
   font-weight: medium;
-  background: linear-gradient(to top, #3b0951, #9b23e6, #fb96ff);
+  background: linear-gradient(to top, #610f84, #9b23e6, #fb96ff);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+`;
+
+export const Container = styled.div`
+  width: 800px;
+  height: 100%;
+  margin: 60px 0;
 `;

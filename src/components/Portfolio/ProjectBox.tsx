@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import * as s from '../style/style';
+import * as s from '../../style/style';
 
 function ProjectBox() {
   const boxClick = (a: string = 'hi') => {
@@ -8,37 +8,28 @@ function ProjectBox() {
 
   return (
     <>
-      <Container>
-        <s.MenuTitle>프로젝트 포트폴리오</s.MenuTitle>
+      <s.Container>
+        <s.MenuTitle>Projects</s.MenuTitle>
         <GridBox>
-          <Box onClick={() => boxClick('111111')} bgColor="tomato">
+          <Box onClick={() => boxClick()}>
             <s.Title>Project</s.Title>
           </Box>
-          <Box onClick={() => boxClick()} bgColor="skyblue">
+          <Box onClick={() => boxClick()}>
             <s.Title>Project</s.Title>
           </Box>
-          <Box onClick={() => boxClick()} bgColor="violet">
+          <Box onClick={() => boxClick()}>
             <s.Title>Project</s.Title>
           </Box>
-          <Box onClick={() => boxClick()} bgColor="green">
+          <Box onClick={() => boxClick()}>
             <s.Title>Project</s.Title>
           </Box>
         </GridBox>
-      </Container>
+      </s.Container>
     </>
   );
 }
 
 export default ProjectBox;
-
-const Container = styled.div`
-  width: 1200px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
 
 const GridBox = styled.div`
   display: grid;
@@ -47,24 +38,23 @@ const GridBox = styled.div`
   grid-template-rows: auto;
   box-sizing: border-box;
   gap: 10px;
+  padding: 10px;
 `;
 
-const Box = styled.div<{ bgColor: string }>`
+const Box = styled.div`
   width: 100%;
   aspect-ratio: 1;
-  background-color: ${(props) => props.bgColor};
   box-sizing: border-box;
-  gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
-  box-shadow: 1px 1px 7px grey;
+  border-radius: 32px;
+  box-shadow: 1px 1px 8px grey;
   cursor: pointer;
 
   :hover {
-    transition: all 0.12s ease-in-out;
+    transition: all 0.2s ease-in-out;
     scale: 1.01;
     box-shadow: 0px 0px 10px grey;
   }

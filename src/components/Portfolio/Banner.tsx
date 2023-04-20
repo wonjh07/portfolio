@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LinearText } from '../style/style';
+import { LinearText } from '../../style/style';
 
 function Banner() {
   return (
@@ -25,7 +25,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right top, #000000, #353335);
+  background: linear-gradient(to right top, #121212, #353335);
 `;
 
 const Text = styled(LinearText)`

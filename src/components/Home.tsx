@@ -1,18 +1,13 @@
 import styled from 'styled-components';
 import Header from './Header';
-import ProjectBox from './ProjectBox';
-import Banner from './Banner';
-import Profile from './Profile';
-import Slogan from './Slogan';
+import { Outlet } from 'react-router-dom';
 
 function Home() {
   return (
     <>
       <Container>
         <Header />
-        <Banner />
-        <Profile />
-        <Slogan />
+        <Outlet />
         <Footer />
       </Container>
     </>
@@ -29,7 +24,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: start;
   user-select: none;
-  min-width: 1000px;
+  min-width: 800px;
 `;
 
 const Footer = styled.div`

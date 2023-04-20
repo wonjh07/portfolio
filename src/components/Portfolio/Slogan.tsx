@@ -22,8 +22,9 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   gap: 40px;
-  font-size: 28px;
+  font-size: 1.6rem;
   font-family: 'Samsung Gothic';
   font-weight: bold;
   background-color: #f6f8fa;
+  color: #424242;
 `;

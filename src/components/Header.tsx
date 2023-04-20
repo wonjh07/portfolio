@@ -1,16 +1,18 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <>
       <Container>
-        <Logo>Jaeho Won</Logo>
-        <Buttons>
-          <T1>Profile</T1>
-          <T1>Projects</T1>
-          <T1>Resume</T1>
-          <T1>Demos</T1>
-        </Buttons>
+        <WidthControl>
+          <Logo>Jaeho Won</Logo>
+          <Buttons>
+            <T1 to="">Portfolio</T1>
+            <T1 to="/resume">Resume</T1>
+            <T1 to="/demos">Demos</T1>
+          </Buttons>
+        </WidthControl>
       </Container>
     </>
   );
@@ -19,8 +21,16 @@ function Header() {
 export default Header;
 
 const Container = styled.div`
-  width: 1000px;
+  width: 100%;
   height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0px 0px 10px grey;
+`;
+
+const WidthControl = styled.div`
+  width: 800px;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -41,6 +51,7 @@ const Logo = styled.div`
   font-family: 'Samsung Gothic';
   font-size: 1.6rem;
   height: 100%;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -49,14 +60,17 @@ const Logo = styled.div`
   box-sizing: border-box;
 `;
 
-const T1 = styled.p`
+const T1 = styled(Link)`
   font-size: 1rem;
   font-family: 'Samsung Gothic';
-  width: 100px;
   cursor: pointer;
+  padding: 10px;
   box-sizing: border-box;
   :hover {
-    font-weight: bold;
+    color: #8916d0;
+    scale: 1.05;
   }
   text-align: center;
+  text-decoration: none;
+  color: black;
 `;
