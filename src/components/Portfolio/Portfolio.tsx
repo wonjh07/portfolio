@@ -3,7 +3,7 @@ import Banner from './Banner';
 import Profile from './Profile';
 import Slogan from './Slogan';
 import Experience from './Experience';
-import Tech from './Tech';
+import Skills from './Skills';
 import Awards from './Awards';
 import styled from 'styled-components';
 
@@ -14,7 +14,7 @@ function Portfolio() {
         <Banner />
         <Profile />
         <Slogan />
-        <Tech />
+        <Skills />
         <Experience />
         <Awards />
         <ProjectBox />

@@ -19,7 +19,7 @@ export default Banner;
 
 const Container = styled.div`
   width: 100%;
-  height: 500px;
+  height: 400px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

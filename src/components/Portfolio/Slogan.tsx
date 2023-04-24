@@ -16,7 +16,7 @@ export default Slogan;
 
 const Container = styled.div`
   width: 100%;
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
