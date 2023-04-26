@@ -10,10 +10,7 @@ function Experience() {
           <Card>
             <Time>2022.01 ~ 2022.12</Time>
             <Title>삼성 청년 SW 아카데미 7기</Title>
-            <Desc>
-              1600시간의 집중코딩 및 알고리즘 교육과 실무 기반 4차산업혁명
-              기술프로젝트
-            </Desc>
+            <Desc>1600시간의 집중코딩 및 알고리즘 교육과 팀 프로젝트</Desc>
             <Desc>상위 5%內 최우수 교육생</Desc>
             <Desc>삼성 SW 역량테스트 모의 A+</Desc>
             <Desc>1학기 성적 우수상 3등</Desc>
@@ -22,8 +19,6 @@ function Experience() {
           <Card>
             <Time>2021.10</Time>
             <Title>42 SEOUL 5기 La Picine</Title>
-            <Desc>동료 상호 평가를 통한 코드 리뷰 및</Desc>
-            <Desc>강사와 교재가 없는 자발적인 교육환경에서 주도적인 학습</Desc>
           </Card>
           <Card>
             <Time>2021.05 ~ 2021.07</Time>

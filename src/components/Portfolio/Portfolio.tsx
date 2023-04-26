@@ -5,7 +5,6 @@ import Slogan from './Slogan';
 import Experience from './Experience';
 import Skills from './Skills';
 import Awards from './Awards';
-import styled from 'styled-components';
 
 function Portfolio() {
   return (

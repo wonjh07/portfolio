@@ -53,6 +53,7 @@ const CardBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 60px;
+  padding-top: 30px;
 `;
 
 const Card = styled.div`

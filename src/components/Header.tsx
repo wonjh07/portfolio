@@ -26,7 +26,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px -8px 30px grey;
 `;
 
 const WidthControl = styled.div`

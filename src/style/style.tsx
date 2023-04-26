@@ -13,10 +13,10 @@ export const MenuTitle = styled.p`
 export const Title = styled.p`
   text-align: center;
   font-family: 'Samsung Gothic';
-  font-size: 30px;
+  font-size: 2rem;
 `;
 
-export const LinearText = styled.p`
+export const LinearText = styled.div`
   font-family: 'Samsung Gothic';
   font-size: 4rem;
   font-weight: medium;
