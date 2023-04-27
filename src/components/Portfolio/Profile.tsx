@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import * as s from '../../style/style';
 import me from '../../assets/images/me.jpeg';
 
-function Profile() {
+const Profile = () => {
   return (
     <>
       <s.Container>
@@ -21,7 +21,7 @@ function Profile() {
       </s.Container>
     </>
   );
-}
+};
 
 export default Profile;
 

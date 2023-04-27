@@ -1,6 +1,6 @@
 import * as s from '../../style/style';
 
-function Resume() {
+const Resume = () => {
   return (
     <>
       <s.Container>
@@ -8,6 +8,6 @@ function Resume() {
       </s.Container>
     </>
   );
-}
+};
 
 export default Resume;

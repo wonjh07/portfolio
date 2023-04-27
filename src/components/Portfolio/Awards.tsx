@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import * as s from '../../style/style';
 
-function Awards() {
+const Awards = () => {
   return (
     <>
       <s.Container>
@@ -46,7 +46,7 @@ function Awards() {
       </s.Container>
     </>
   );
-}
+};
 
 export default Awards;
 

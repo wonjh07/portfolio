@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import * as s from '../../style/style';
 
-function Demos() {
+const Demos = () => {
   return (
     <>
       <s.Container>
@@ -10,6 +10,6 @@ function Demos() {
       </s.Container>
     </>
   );
-}
+};
 
 export default Demos;

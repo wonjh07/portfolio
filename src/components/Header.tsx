@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-function Header() {
+const Header = () => {
   return (
     <>
       <Container>
@@ -16,7 +16,7 @@ function Header() {
       </Container>
     </>
   );
-}
+};
 
 export default Header;
 

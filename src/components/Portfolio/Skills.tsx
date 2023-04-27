@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import * as s from '../../style/style';
 
-function Skills() {
+const Skills = () => {
   return (
     <>
       <s.Container>
@@ -44,7 +44,7 @@ function Skills() {
       </s.Container>
     </>
   );
-}
+};
 
 export default Skills;
 

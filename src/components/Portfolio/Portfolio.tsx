@@ -6,7 +6,7 @@ import Experience from './Experience';
 import Skills from './Skills';
 import Awards from './Awards';
 
-function Portfolio() {
+const Portfolio = () => {
   return (
     <>
       <>
@@ -20,6 +20,6 @@ function Portfolio() {
       </>
     </>
   );
-}
+};
 
 export default Portfolio;

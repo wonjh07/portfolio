@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { KeyboardControls, Sky, OrbitControls } from '@react-three/drei';
+import { KeyboardControls, Sky } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { Physics } from '@react-three/rapier';
 import { Suspense } from 'react';
@@ -8,7 +8,7 @@ import Player from './Player';
 import Snow from './Snow';
 import Plain from './Plain';
 
-function Three() {
+const Three = () => {
   return (
     <>
       <Container>
@@ -44,7 +44,7 @@ function Three() {
       </Container>
     </>
   );
-}
+};
 
 export default Three;
 

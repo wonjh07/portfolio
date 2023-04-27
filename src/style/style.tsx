@@ -18,10 +18,10 @@ export const Title = styled.p`
 
 export const LinearText = styled.div`
   font-family: 'Samsung Gothic';
-  font-size: 4rem;
+  font-size: 4.4rem;
   font-weight: medium;
-  background: linear-gradient(to top, #610f84, #9b23e6, #fb96ff);
-  color: transparent;
+  background: linear-gradient(-25deg, #8622b0, #9b23e6, #fb96ff);
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 `;

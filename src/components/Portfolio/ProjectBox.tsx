@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import * as s from '../../style/style';
 
-function ProjectBox() {
+const ProjectBox = () => {
   const boxClick = (a: string = 'hi') => {
     alert(a);
   };
@@ -27,7 +27,7 @@ function ProjectBox() {
       </s.Container>
     </>
   );
-}
+};
 
 export default ProjectBox;
 

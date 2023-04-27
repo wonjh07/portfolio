@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { LinearText } from '../../style/style';
+import { Canvas } from '@react-three/fiber';
+import Stars from './Stars';
 
-function Banner() {
+const Banner = () => {
   return (
     <>
       <Container>
@@ -10,10 +12,13 @@ function Banner() {
           <p>FRONTEND DEVELOPER</p>
           <p>원재호 입니다.</p>
         </Text>
+        <Canvas camera={{ position: [0, 0, 1] }}>
+          <Stars />
+        </Canvas>
       </Container>
     </>
   );
-}
+};
 
 export default Banner;
 
@@ -29,7 +34,7 @@ const Container = styled.div`
 `;
 
 const Text = styled(LinearText)`
-  height: 100%;
+  position: absolute;
   gap: 20px;
   animation-name: fadeIn;
   animation-duration: 2s;
@@ -37,6 +42,7 @@ const Text = styled(LinearText)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 
   @keyframes fadeIn {
     from {
@@ -44,7 +50,7 @@ const Text = styled(LinearText)`
     }
 
     to {
-      opacity: 1;
+      opacity: 2;
     }
   }
 `;

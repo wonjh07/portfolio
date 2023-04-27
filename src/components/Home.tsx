@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Header from './Header';
 import { Outlet } from 'react-router-dom';
 
-function Home() {
+const Home = () => {
   return (
     <>
       <Container>
@@ -12,7 +12,7 @@ function Home() {
       </Container>
     </>
   );
-}
+};
 
 export default Home;
 

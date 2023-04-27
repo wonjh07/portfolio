@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import * as s from '../../style/style';
 
-function Experience() {
+const Experience = () => {
   return (
     <>
       <s.Container>
@@ -47,7 +47,7 @@ function Experience() {
       </s.Container>
     </>
   );
-}
+};
 
 export default Experience;
 
