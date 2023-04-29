@@ -4,7 +4,7 @@ export const MenuTitle = styled.p`
   width: 100%;
   text-align: start;
   font-family: 'Samsung Gothic';
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 40px;
   color: #8916d0;
@@ -18,7 +18,7 @@ export const Title = styled.p`
 
 export const LinearText = styled.div`
   font-family: 'Samsung Gothic';
-  font-size: 4.4rem;
+  font-size: 5rem;
   font-weight: medium;
   background: linear-gradient(-25deg, #8622b0, #9b23e6, #fb96ff);
   -webkit-text-fill-color: transparent;

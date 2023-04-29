@@ -8,11 +8,11 @@ const Banner = () => {
     <>
       <Container>
         <Text>
-          <p>안녕하세요,</p>
-          <p>FRONTEND DEVELOPER</p>
+          <p>반갑습니다,</p>
+          <p>WEB FRONTEND DEVELOPER</p>
           <p>원재호 입니다.</p>
         </Text>
-        <Canvas camera={{ position: [0, 0, 1] }}>
+        <Canvas>
           <Stars />
         </Canvas>
       </Container>
@@ -24,7 +24,7 @@ export default Banner;
 
 const Container = styled.div`
   width: 100%;
-  height: 400px;
+  height: 500px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,9 @@ const Text = styled(LinearText)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  user-select: none;
+  z-index: 1;
+  pointer-events: none;
 
   @keyframes fadeIn {
     from {

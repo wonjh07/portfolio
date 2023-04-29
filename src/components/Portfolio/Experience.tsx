@@ -13,8 +13,6 @@ const Experience = () => {
             <Desc>1600시간의 집중코딩 및 알고리즘 교육과 팀 프로젝트</Desc>
             <Desc>상위 5%內 최우수 교육생</Desc>
             <Desc>삼성 SW 역량테스트 모의 A+</Desc>
-            <Desc>1학기 성적 우수상 3등</Desc>
-            <Desc>참여 프로젝트 전체 수상 (1등 2회, 2등 2회)</Desc>
           </Card>
           <Card>
             <Time>2021.10</Time>
@@ -41,7 +39,7 @@ const Experience = () => {
           <Card>
             <Time>2011.03</Time>
             <Title>🏛️ 세종대학교 입학</Title>
-            <Desc>기계공학과</Desc>
+            <Desc>학사 기계공학과</Desc>
           </Card>
         </CardBox>
       </s.Container>

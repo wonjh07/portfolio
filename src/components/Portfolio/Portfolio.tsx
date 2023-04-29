@@ -14,9 +14,9 @@ const Portfolio = () => {
         <Profile />
         <Slogan />
         <Skills />
-        <Experience />
-        <Awards />
         <ProjectBox />
+        <Awards />
+        <Experience />
       </>
     </>
   );

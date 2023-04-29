@@ -10,12 +10,11 @@ const Skills = () => {
           <Card>
             <Title>Front-end</Title>
             <Stack>
-              <p>HTML5, CSS3, JavaScript (ES6)</p>
+              <p>HTML5, CSS3, JavaScript(ES6)</p>
               <p>React, TypeScript</p>
               <p>React Redux, Recoil, React Router</p>
               <p>Styled Components, Emotion</p>
-              <p>Three.js</p>
-              <p>React Three Fiber</p>
+              <p>Three.js, React Three Fiber</p>
             </Stack>
           </Card>
           <Card>
@@ -73,6 +72,8 @@ const Stack = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: start;
   gap: 20px;
   font-size: 1.4rem;
   font-family: 'Samsung Gothic';
