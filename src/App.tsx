@@ -1,3 +1,4 @@
+import { HelmetProvider } from 'react-helmet-async';
 import Router from './routes/index';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -5,7 +6,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Router />
+        <HelmetProvider>
+          <Router />
+        </HelmetProvider>
       </BrowserRouter>
     </>
   );

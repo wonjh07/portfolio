@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 import Header from './Header';
 import { Outlet } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Jaeho Won's Portfolio</title>
+      </Helmet>
       <Container>
         <Header />
         <Outlet />

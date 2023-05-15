@@ -9,15 +9,13 @@ import Awards from './Awards';
 const Portfolio = () => {
   return (
     <>
-      <>
-        <Banner />
-        <Profile />
-        <Slogan />
-        <Skills />
-        <ProjectBox />
-        <Awards />
-        <Experience />
-      </>
+      <Banner />
+      <Profile />
+      <Slogan />
+      <Skills />
+      <ProjectBox />
+      <Awards />
+      <Experience />
     </>
   );
 };

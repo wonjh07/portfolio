@@ -9,7 +9,7 @@ const Banner = () => {
       <Container>
         <Text>
           <p>반갑습니다,</p>
-          <p>WEB FRONTEND DEVELOPER</p>
+          <p>Junior Frontend Developer</p>
           <p>원재호 입니다.</p>
         </Text>
         <Canvas>

@@ -11,10 +11,8 @@ const Skills = () => {
             <Title>Front-end</Title>
             <Stack>
               <p>HTML5, CSS3, JavaScript(ES6)</p>
-              <p>React, TypeScript</p>
-              <p>React Redux, Recoil, React Router</p>
-              <p>Styled Components, Emotion</p>
-              <p>Three.js, React Three Fiber</p>
+              <p>React, TypeScript, Styled Components</p>
+              <p>Three.js</p>
             </Stack>
           </Card>
           <Card>
@@ -27,8 +25,8 @@ const Skills = () => {
           <Card>
             <Title>Dev-ops</Title>
             <Stack>
-              <p>MySQL</p>
               <p>AWS-EC2</p>
+              <p>MySQL</p>
             </Stack>
           </Card>
           <Card>

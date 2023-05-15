@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import resume from '../assets/docs/resume.pdf';
 
 const Header = () => {
   return (
@@ -9,7 +10,9 @@ const Header = () => {
           <Logo>Jaeho Won</Logo>
           <Buttons>
             <T1 to="">Portfolio</T1>
-            <T1 to="/resume">Resume</T1>
+            <Resume href={resume} target="_blank">
+              Resume
+            </Resume>
             <T1 to="/demos">Demos</T1>
           </Buttons>
         </WidthControl>
@@ -61,6 +64,22 @@ const Logo = styled.div`
 `;
 
 const T1 = styled(Link)`
+  font-size: 1rem;
+  font-family: 'Samsung Gothic';
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+  :hover {
+    color: #8916d0;
+    scale: 1.05;
+  }
+  text-align: center;
+  text-decoration: none;
+  color: black;
+`;
+
+const Resume = styled.a`
+  text-decoration: none;
   font-size: 1rem;
   font-family: 'Samsung Gothic';
   cursor: pointer;

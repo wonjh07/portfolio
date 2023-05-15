@@ -65,11 +65,12 @@ const Container = styled.div`
 const Project = styled.div<{ modal: boolean }>`
   width: 100%;
   height: 500px;
-  background-color: ${(props) => (props.modal ? `#d1d5e0` : `#717889`)};
+  background-color: ${(props) => (props.modal ? `#e0e3ec` : `#717889`)};
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s;
 `;
 
 const FlexBox = styled.div`
@@ -88,14 +89,14 @@ const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 14px;
+  gap: 20px;
 `;
 
 const ImageBox = styled.div`
   width: 100%;
   height: 100%;
   animation-name: fadeIn;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,7 +141,7 @@ const Results = styled.li`
 
 const Button = styled.div<{ modal: boolean }>`
   position: absolute;
-  transform: translate(380px, -160px);
+  transform: translate(380px, -210px);
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -148,7 +149,7 @@ const Button = styled.div<{ modal: boolean }>`
   svg {
     width: 100%;
     height: 100%;
-    color: ${(props) => (props.modal ? `#000000` : `#ffffff`)};
+    color: ${(props) => (props.modal ? `#4a4a4a` : `#ffffff`)};
   }
   z-index: 2;
 `;
